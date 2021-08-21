@@ -1,0 +1,32 @@
+<div class="card_detail" *ngIf="getItem.Id !== undefined">
+    <div class="card_detail__content-images">
+        <img [src]="item" class="card_detail__img" *ngFor="let item of getItem.UrlFotos"/>
+    </div>
+    
+    <div class="card_detail__information">
+        <div class="card_detail__information-item">
+            <label>Titulo:</label>
+            <label>{{getItem.Titulo}}</label>
+        </div>
+        <div class="card_detail__information-item">
+            <label>Modelo:</label>
+            <label>{{getItem.Modelo}}</label>
+        </div>
+        <div class="card_detail__information-item">
+            <label>Marca:</label>
+            <label>{{getItem.Marca}}</label>
+        </div>
+        <div class="card_detail__information-item">
+            <label>SKU:</label>
+            <label>{{getItem.SKU}}</label>
+        </div>
+        <div class="card_detail__information-item">
+            <label>Valor unitario:</label>
+            <label>{{getItem.ValorUnt | number}}</label>
+        </div>
+       
+    </div>
+    <button class="card_detail__button" (click)="resetItem()">
+        Close
+    </button>
+</div>

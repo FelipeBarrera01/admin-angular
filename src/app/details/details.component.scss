@@ -1,0 +1,30 @@
+.card_detail{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    &__content-images{
+        width: 45%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__img{
+        width: 80px;
+        margin-bottom: 20px;
+    }
+    &__information{
+        margin-bottom: 10px;
+    }
+    &__button{
+        padding: 5px 10px;
+        background-color: rgb(8, 8, 114);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+}

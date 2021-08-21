@@ -1,0 +1,18 @@
+
+
+    <div *ngFor="let item of resultados" class="card">
+        
+
+            <img [src]="item.UrlFotos[0]" class="card__img" />
+      
+        
+
+        
+        <label>
+                {{item.Titulo}}
+        </label>
+        <button class="card__button" (click)="selectItem(item)">
+            View details
+        </button>
+    </div>
+
